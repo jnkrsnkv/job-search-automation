@@ -89,6 +89,10 @@ Put these in the working folder Claude reads at the start of every session
 - `filter-criteria.md`
 - `sources.md`
 - `MEMORY.md`
+- a copy of the `reference/` folder — unchanged. `CLAUDE.md` points at
+  `reference/tool-access-playbook.md`, `reference/email-alerts-pattern.md` and
+  `reference/notion-schema.md` by relative path, so they have to sit next to it or
+  those links go nowhere during a run.
 
 In `CLAUDE.md` fill in: your project identity, the Notion database IDs, paths to
 `filter-criteria.md` / `sources.md`, and the email alert addresses in the Step 0

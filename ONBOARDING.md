@@ -22,7 +22,9 @@ workspace".
   next run and continue from the unfinished stage.
 - Put filled files (`CLAUDE.md`, `filter-criteria.md`, `sources.md`, `MEMORY.md`)
   in the **user's working folder** (the root of their workstation / project), NOT
-  in the template folder. The template stays a reference.
+  in the template folder. The template stays a reference. Copy the `reference/`
+  folder over unchanged as well — `CLAUDE.md` links to the files inside it by
+  relative path, so it must sit next to `CLAUDE.md` in the working folder.
 - Don't invent the substance for the user — their tracks, red flags, sources.
   Offer options, but they decide.
 - The user may not know terms (ATS, staging, boolean). Explain as you go, plainly.
@@ -174,10 +176,12 @@ Take `templates/CLAUDE.md`, fill in:
 - Paths to `filter-criteria.md` and `sources.md`.
 - **Notion database IDs** from Stage 2.
 - **The "Step 0" table** — addresses and methods from Stage 5.
-- The allowed address list in "Email alert handling" — the same addresses.
+- The allowed address list in **"Email alert handling"** — the same addresses. The
+  two lists must match; a source missing from either one gets skipped or, worse,
+  the run touches mail it shouldn't.
 
-Lay out `CLAUDE.md`, `filter-criteria.md`, `sources.md`, `MEMORY.md` in the working
-folder. Show where they are. Wait for "ok".
+Lay out `CLAUDE.md`, `filter-criteria.md`, `sources.md`, `MEMORY.md` and a copy of
+the `reference/` folder in the working folder. Show where they are. Wait for "ok".
 
 ---
 

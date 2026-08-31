@@ -121,6 +121,46 @@ are invisible.
 
 ---
 
+# Email alert handling
+
+Rules for the mailbox. Full detail — `reference/email-alerts-pattern.md`.
+
+## Allowed addresses (the only emails you may touch)
+
+<!-- FILL IN. The same addresses as in the "Step 0" table above — keep the two
+     lists in sync. Take each address from the first real email, not from what you
+     expect it to be. -->
+
+- `jobalerts-noreply@linkedin.com` — LinkedIn Job Alerts
+- <!-- `<address>` — <industry job board> -->
+- <!-- `<address>` — <aggregator> -->
+
+Adding a new alert source = add its address **here and in the Step 0 table** first.
+An address that is not on this list does not get touched, even if the email
+obviously looks like a job alert.
+
+## What you may and may not do
+
+- **May:** read emails from the addresses above; archive them after processing —
+  remove the `UNREAD` and `INBOX` labels, add `job-alerts/processed`.
+- **Never touch** anything not on the list: post notifications, messages from
+  recruiters, InMail, personal correspondence. The user reads those themselves.
+- **Never delete** an email and never mark it spam — archive only, it is
+  reversible and the email stays in All Mail.
+- **Never click a subscription confirmation link** ("confirm your email") — report
+  that it arrived and let the user click it.
+
+## Order (critical)
+
+Parse → write candidates to Notion → **only then** archive. If a run crashes
+midway, un-archived emails stay in the inbox and the next run picks them up. The
+reverse order silently loses jobs.
+
+`from:<address> in:inbox` means "unprocessed for this source". An empty result =
+the source is done for this run.
+
+---
+
 # Resources
 
 | Resource | Read when... |

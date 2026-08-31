@@ -93,7 +93,7 @@ One line per row of the Step 0 table:
 
 ```
 ✅ jobalerts-noreply@linkedin.com — 4 threads, 2 recorded
-✅ hello@workingnomads.com — 1 thread, 0 recorded
+✅ hello@remote-digest.example — 1 thread, 0 recorded
 ⏭ no-reply@example.org — skipped (no access to the forward)
 ```
 

@@ -97,8 +97,9 @@ version:
 2. Create 2 Notion databases per `reference/notion-schema.md`.
 3. Fill in `templates/filter-criteria.md` for yourself.
 4. Fill in `templates/sources.md` — your own list.
-5. Put the filled `CLAUDE.md`, `filter-criteria.md`, `sources.md`, `MEMORY.md` in
-   the working folder Claude reads at the start of a session.
+5. Put the filled `CLAUDE.md`, `filter-criteria.md`, `sources.md`, `MEMORY.md` —
+   plus a copy of the `reference/` folder — in the working folder Claude reads at
+   the start of a session.
 6. Build the review dashboard (`reference/dashboard-notes.md`).
 7. Set up email job alerts, record their sender addresses in `CLAUDE.md` (Step 0).
 8. Set the schedule.
