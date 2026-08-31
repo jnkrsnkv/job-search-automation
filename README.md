@@ -122,7 +122,6 @@ version:
 | `reference/dashboard-notes.md` | What the review dashboard is and how to get one. | Instruction |
 | `examples/` | Filled `sources.md` and `filter-criteria.md` with fictional data. | Example |
 | `LICENSE` | MIT. | — |
-| `PUBLISHING.md` | Instructions for the template author on publishing to GitHub. | Author only; delete later if you want |
 
 ---
 
